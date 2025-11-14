@@ -218,14 +218,14 @@ ni:
   source_2: 5
   source_3: 4
 edges:
+  - [5, 0, "red"]
   - [10, 4, "red"]
-  - [12, 9, "red"]
   - [9, 3, "red"]
   - [8, 2, "red"]
   - [7, 2, "red"]
-  - [12, 5, "red"]
+  - [12, 5]
   - [4, 3, "red"]
-  - [12, 8, "red"]
+  - [12, 8]
   - [5, 2, "red"]
   - [11, 8]
   - [5, 3, "red"]
@@ -234,7 +234,7 @@ edges:
   - [10, 6, "red"]
   - [8, 0, "red"]
   - [6, 1, "red"]
-  - [12, 4, "red"]
+  - [12, 4]
   - [6, 0, "red"]
   - [9, 0, "red"]
   - [6, 2, "red"]
@@ -244,7 +244,7 @@ edges:
   - [11, 9]
   - [7, 0, "red"]
   - [11, 6]
-  - [12, 7, "red"]
+  - [12, 7]
   - [9, 2, "red"]
   - [10, 8, "red"]
   - [5, 1, "red"]
@@ -257,7 +257,7 @@ edges:
   - [11, 5]
 assignment:
   assignable_nodes:
-    source_0: [4, 6, 7, 8, 9, 10, 11, 12]
+    source_0: [4, 5, 6, 7, 8, 9, 10, 11, 12]
     source_1: [4, 5, 6, 7, 8, 9, 10, 11, 12]
     source_2: [4, 5, 6, 7, 8, 9, 10, 11, 12]
     source_3: [4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -285,14 +285,14 @@ ni:
   source_2: 5
   source_3: 4
 edges:
+  - [5, 0, "red"]
   - [11, 5]
-  - [12, 9, "red"]
   - [9, 3, "red"]
   - [8, 2, "red"]
   - [7, 2, "red"]
-  - [12, 5, "red"]
+  - [12, 5]
   - [4, 3, "red"]
-  - [12, 8, "red"]
+  - [12, 8]
   - [5, 2, "red"]
   - [11, 8]
   - [5, 3, "red"]
@@ -301,7 +301,7 @@ edges:
   - [10, 6]
   - [8, 0, "red"]
   - [6, 1, "red"]
-  - [12, 4, "red"]
+  - [12, 4]
   - [6, 0, "red"]
   - [9, 0, "red"]
   - [6, 2, "red"]
@@ -311,7 +311,7 @@ edges:
   - [11, 9]
   - [7, 0, "red"]
   - [11, 6]
-  - [12, 7, "red"]
+  - [12, 7]
   - [9, 2, "red"]
   - [10, 8]
   - [5, 1, "red"]
@@ -323,7 +323,7 @@ edges:
   - [10, 5]
 assignment:
   assignable_nodes:
-    source_0: [4, 6, 7, 8, 9, 10, 11, 12]
+    source_0: [4, 5, 6, 7, 8, 9, 10, 11, 12]
     source_1: [4, 5, 6, 7, 8, 9, 10, 11, 12]
     source_2: [4, 5, 6, 7, 8, 9, 10, 11, 12]
     source_3: [4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -351,8 +351,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [9, 3, "red"]
   - [8, 2, "red"]
   - [7, 2, "red"]
@@ -416,8 +416,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [8, 1, "red"]
   - [8, 2, "red"]
   - [7, 2, "red"]
@@ -480,8 +480,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [8, 3, "red"]
   - [8, 2, "red"]
   - [7, 2, "red"]
@@ -543,8 +543,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [4, 1, "red"]
   - [8, 2, "red"]
   - [7, 2, "red"]
@@ -605,8 +605,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [4, 0, "red"]
   - [8, 2, "red"]
   - [7, 2, "red"]
@@ -666,8 +666,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [7, 1, "red"]
   - [8, 2, "red"]
   - [7, 2, "red"]
@@ -726,8 +726,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [5, 1, "red"]
   - [8, 2, "red"]
   - [7, 2, "red"]
@@ -785,8 +785,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [8, 2, "red"]
   - [7, 2, "red"]
@@ -843,8 +843,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [8, 2, "red"]
   - [9, 2, "red"]
@@ -900,8 +900,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [8, 2, "red"]
   - [12, 7]
@@ -956,8 +956,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [8, 2, "red"]
   - [12, 7]
@@ -1011,8 +1011,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [8, 2, "red"]
   - [12, 7]
@@ -1065,8 +1065,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [11, 9]
   - [12, 7]
@@ -1118,8 +1118,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [11, 9]
   - [12, 7]
@@ -1170,8 +1170,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [11, 9]
   - [12, 7]
@@ -1221,8 +1221,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [11, 9]
   - [12, 7]
@@ -1271,8 +1271,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [11, 9]
   - [12, 7]
@@ -1320,8 +1320,8 @@ ni:
   source_2: 5
   source_3: 4
 edges:
-  - [11, 5]
   - [10, 5]
+  - [11, 5]
   - [10, 8]
   - [11, 9]
   - [12, 7]
@@ -1378,11 +1378,11 @@ edges:
   - [10, 7, "red"]
   - [12, 4, "red"]
   - [9, 1, "blue"]
-  - [11, 2]
+  - [10, 2]
   - [7, 3, "blue"]
   - [12, 8, "red"]
   - [12, 7, "red"]
-  - [10, 2]
+  - [11, 2]
   - [4, 2, "blue"]
   - [12, 2]
 assignment:
@@ -1419,8 +1419,8 @@ edges:
   - [7, 3, "blue"]
   - [9, 1, "blue"]
   - [12, 7, "red"]
-  - [10, 2]
   - [11, 2]
+  - [10, 2]
   - [4, 2, "blue"]
   - [6, 3, "blue"]
   - [11, 6]
@@ -1464,8 +1464,8 @@ edges:
   - [7, 3, "blue"]
   - [9, 1, "blue"]
   - [11, 8]
-  - [10, 2]
   - [11, 2]
+  - [10, 2]
   - [4, 2, "blue"]
   - [6, 3, "blue"]
   - [11, 6]
@@ -1508,8 +1508,8 @@ edges:
   - [7, 3, "blue"]
   - [9, 1, "blue"]
   - [11, 8]
-  - [10, 2]
   - [11, 2]
+  - [10, 2]
   - [4, 2, "blue"]
   - [6, 3, "blue"]
   - [11, 6]
@@ -1551,8 +1551,8 @@ edges:
   - [7, 3, "blue"]
   - [9, 1, "blue"]
   - [11, 8]
-  - [10, 2]
   - [11, 2]
+  - [10, 2]
   - [4, 2, "blue"]
   - [6, 3, "blue"]
   - [11, 6]
@@ -1593,8 +1593,8 @@ edges:
   - [7, 3, "blue"]
   - [9, 1, "blue"]
   - [11, 8]
-  - [10, 2, "blue"]
   - [11, 2]
+  - [10, 2, "blue"]
   - [4, 2, "blue"]
   - [6, 3, "blue"]
   - [11, 6]
@@ -1634,8 +1634,8 @@ edges:
   - [7, 3, "blue"]
   - [9, 1, "blue"]
   - [11, 8]
-  - [10, 2, "blue"]
   - [11, 2]
+  - [10, 2, "blue"]
   - [4, 2, "blue"]
   - [6, 3, "blue"]
   - [11, 6]
@@ -1675,8 +1675,8 @@ edges:
   - [7, 3, "blue"]
   - [4, 2, "blue"]
   - [12, 2, "blue"]
-  - [10, 2, "blue"]
   - [11, 2]
+  - [10, 2, "blue"]
   - [11, 6]
   - [11, 1]
 assignment:
@@ -1708,10 +1708,10 @@ ni:
 edges:
   - [7, 3, "blue"]
   - [4, 2, "blue"]
-  - [11, 2]
+  - [10, 2, "blue"]
   - [8, 0, "blue"]
   - [6, 3, "blue"]
-  - [10, 2, "blue"]
+  - [11, 2]
   - [11, 8]
   - [11, 6]
   - [12, 2, "blue"]
@@ -1744,10 +1744,10 @@ edges:
   - [11, 3]
   - [8, 0, "blue"]
   - [11, 8, "red"]
-  - [10, 2, "blue"]
+  - [11, 2, "red"]
   - [7, 3, "blue"]
   - [12, 2, "blue"]
-  - [11, 2, "red"]
+  - [10, 2, "blue"]
   - [4, 2, "blue"]
 assignment:
   assignable_nodes:
@@ -1776,10 +1776,10 @@ ni:
 edges:
   - [8, 0, "blue"]
   - [7, 3, "blue"]
-  - [10, 2, "blue"]
+  - [11, 2, "red"]
   - [12, 2, "blue"]
   - [4, 2, "blue"]
-  - [11, 2, "red"]
+  - [10, 2, "blue"]
   - [11, 3]
 assignment:
   assignable_nodes:
@@ -1808,10 +1808,10 @@ ni:
 edges:
   - [8, 0, "blue"]
   - [7, 3, "blue"]
-  - [10, 2, "blue"]
+  - [11, 3, "blue"]
   - [12, 2, "blue"]
   - [4, 2, "blue"]
-  - [11, 3, "blue"]
+  - [10, 2, "blue"]
 assignment:
   assignable_nodes:
     source_0: [8]
@@ -1834,25 +1834,25 @@ metadata:
   k: 3
 ni:
   source_0: 2
-  source_2: 4
-  source_3: 2
+  source_2: 3
+  source_3: 3
 edges:
   - [7, 3, "blue"]
   - [4, 2, "blue"]
   - [12, 2, "blue"]
   - [8, 0, "blue"]
-  - [10, 2, "blue"]
+  - [11, 3, "blue"]
 assignment:
   assignable_nodes:
     source_0: [8]
-    source_2: [4, 10, 12]
-    source_3: [7]
+    source_2: [4, 12]
+    source_3: [7, 11]
   matching: 
     - [0, 8]
     - [2, 4]
-    - [2, 10]
     - [2, 12]
     - [3, 7]
+    - [3, 11]
 
 ---
 event_id: 36
@@ -1863,71 +1863,71 @@ metadata:
   k: 3
 ni:
   source_0: 2
-  source_2: 4
-  source_3: 1
+  source_2: 3
+  source_3: 2
 edges:
-  - [10, 2, "blue"]
+  - [11, 3, "blue"]
   - [4, 2, "blue"]
   - [12, 2, "blue"]
   - [8, 0, "blue"]
 assignment:
   assignable_nodes:
     source_0: [8]
-    source_2: [4, 10, 12]
-    source_3: []
+    source_2: [4, 12]
+    source_3: [11]
   matching: 
     - [0, 8]
     - [2, 4]
-    - [2, 10]
     - [2, 12]
+    - [3, 11]
 
 ---
 event_id: 37
 label: Contract
 metadata:
   vertices: 6
-  edges: 4
-  k: 2
+  edges: 3
+  k: 3
 ni:
   source_0: 2
-  source_2: 4
+  source_2: 2
+  source_3: 2
 edges:
-  - [12, 2, "blue"]
+  - [11, 3, "blue"]
   - [8, 0, "blue"]
-  - [4, 2, "blue"]
-  - [10, 2, "blue"]
+  - [12, 2, "blue"]
 assignment:
   assignable_nodes:
     source_0: [8]
-    source_2: [4, 10, 12]
+    source_2: [12]
+    source_3: [11]
   matching: 
     - [0, 8]
-    - [2, 4]
-    - [2, 10]
     - [2, 12]
+    - [3, 11]
 
 ---
 event_id: 38
 label: Contract
 metadata:
   vertices: 5
-  edges: 3
-  k: 2
+  edges: 2
+  k: 3
 ni:
   source_0: 2
-  source_2: 3
+  source_2: 1
+  source_3: 2
 edges:
-  - [12, 2, "blue"]
+  - [11, 3, "blue"]
   - [8, 0, "blue"]
-  - [10, 2, "blue"]
 assignment:
   assignable_nodes:
     source_0: [8]
-    source_2: [10, 12]
+    source_2: []
+    source_3: [11]
   matching: 
     - [0, 8]
-    - [2, 10]
-    - [2, 12]
+    - [3, 11]
 
 ---
 event_id: 39
@@ -1938,17 +1938,17 @@ metadata:
   k: 2
 ni:
   source_0: 2
-  source_2: 2
+  source_3: 2
 edges:
-  - [10, 2, "blue"]
   - [8, 0, "blue"]
+  - [11, 3, "blue"]
 assignment:
   assignable_nodes:
     source_0: [8]
-    source_2: [10]
+    source_3: [11]
   matching: 
     - [0, 8]
-    - [2, 10]
+    - [3, 11]
 
 ---
 event_id: 40
@@ -1959,13 +1959,13 @@ metadata:
   k: 2
 ni:
   source_0: 2
-  source_2: 1
+  source_3: 1
 edges:
   - [8, 0, "blue"]
 assignment:
   assignable_nodes:
     source_0: [8]
-    source_2: []
+    source_3: []
   matching: 
     - [0, 8]
 

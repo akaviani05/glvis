@@ -1202,17 +1202,17 @@ ni:
 edges:
   - [10, 0, "blue"]
   - [11, 3]
+  - [8, 0, "red"]
   - [11, 0, "red"]
-  - [11, 5, "red"]
   - [9, 0, "red"]
-  - [8, 3, "blue"]
+  - [8, 3]
   - [9, 3]
   - [12, 0, "blue"]
   - [5, 2, "blue"]
 assignment:
   assignable_nodes:
-    source_0: [9, 10, 11, 12]
-    source_2: [5, 11]
+    source_0: [8, 9, 10, 11, 12]
+    source_2: [5]
     source_3: [8, 9, 11]
   matching: 
     - [0, 10]
@@ -1237,14 +1237,14 @@ edges:
   - [10, 0, "blue"]
   - [11, 3]
   - [5, 2, "blue"]
-  - [11, 5, "red"]
+  - [11, 0, "red"]
   - [9, 0, "red"]
   - [8, 3, "blue"]
   - [9, 3]
   - [12, 0, "blue"]
 assignment:
   assignable_nodes:
-    source_0: [9, 10, 12]
+    source_0: [9, 10, 11, 12]
     source_2: [5]
     source_3: [8, 9, 11]
   matching: 

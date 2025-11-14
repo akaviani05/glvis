@@ -1226,14 +1226,14 @@ edges:
   - [5, 1, "blue"]
   - [4, 0, "blue"]
   - [10, 2, "blue"]
-  - [11, 5, "red"]
+  - [11, 2, "red"]
   - [11, 3]
   - [8, 2, "blue"]
 assignment:
   assignable_nodes:
     source_0: [4]
     source_1: [5]
-    source_2: [8, 9, 10]
+    source_2: [8, 9, 10, 11]
     source_3: [11]
   matching: 
     - [0, 4]

@@ -1283,13 +1283,13 @@ edges:
   - [7, 0, "blue"]
   - [11, 2]
   - [9, 3, "blue"]
+  - [11, 3, "red"]
   - [10, 3, "blue"]
-  - [11, 7, "red"]
 assignment:
   assignable_nodes:
     source_0: [7]
     source_2: [11]
-    source_3: [9, 10]
+    source_3: [9, 10, 11]
   matching: 
     - [0, 7]
     - [2, 11]

@@ -582,20 +582,20 @@ ni:
 edges:
   - [6, 1, "blue"]
   - [3, 0, "blue"]
-  - [7, 2]
-  - [9, 3]
-  - [5, 1, "blue"]
+  - [7, 2, "blue"]
+  - [5, 2, "red"]
+  - [5, 1]
   - [8, 6]
   - [8, 2]
   - [9, 6]
-  - [7, 6, "red"]
+  - [9, 3]
   - [8, 5]
   - [9, 5]
 assignment:
   assignable_nodes:
-    source_0: [3]
+    source_0: [3, 9]
     source_1: [5, 6, 8, 9]
-    source_2: [7, 8]
+    source_2: [5, 7, 8, 9]
   matching: 
     - [0, 3]
     - [1, 5]
@@ -619,12 +619,12 @@ edges:
   - [6, 1, "blue"]
   - [3, 0, "blue"]
   - [7, 2, "blue"]
-  - [9, 3]
+  - [9, 5]
   - [5, 1, "blue"]
   - [8, 6]
   - [8, 2]
   - [9, 6]
-  - [9, 5]
+  - [9, 3]
   - [8, 5]
 assignment:
   assignable_nodes:
@@ -655,9 +655,9 @@ edges:
   - [3, 0, "blue"]
   - [6, 1, "blue"]
   - [8, 2, "red"]
-  - [9, 3, "red"]
-  - [8, 1]
   - [9, 1]
+  - [8, 1]
+  - [9, 3, "red"]
   - [8, 6, "red"]
   - [7, 2, "blue"]
 assignment:
@@ -685,9 +685,9 @@ ni:
   source_2: 2
 edges:
   - [3, 0, "blue"]
-  - [6, 1, "blue"]
-  - [9, 6, "red"]
   - [9, 1]
+  - [6, 1, "blue"]
+  - [9, 3, "red"]
   - [8, 1]
   - [7, 2, "blue"]
   - [8, 2, "red"]
@@ -717,9 +717,9 @@ ni:
   source_2: 2
 edges:
   - [3, 0, "blue"]
+  - [9, 1, "blue"]
   - [6, 1, "blue"]
   - [8, 6, "red"]
-  - [9, 1, "blue"]
   - [8, 1]
   - [7, 2, "blue"]
   - [8, 2, "red"]
@@ -748,9 +748,9 @@ ni:
   source_2: 2
 edges:
   - [3, 0, "blue"]
+  - [9, 1, "blue"]
   - [6, 1, "blue"]
   - [8, 2, "red"]
-  - [9, 1, "blue"]
   - [8, 1]
   - [7, 2, "blue"]
 assignment:
@@ -778,9 +778,9 @@ ni:
   source_2: 2
 edges:
   - [3, 0, "blue"]
+  - [9, 1, "blue"]
   - [6, 1, "blue"]
   - [7, 2, "blue"]
-  - [9, 1, "blue"]
   - [8, 1, "blue"]
 assignment:
   assignable_nodes:
@@ -803,71 +803,71 @@ metadata:
   k: 3
 ni:
   source_0: 2
-  source_1: 3
-  source_2: 2
+  source_1: 4
+  source_2: 1
 edges:
   - [3, 0, "blue"]
+  - [9, 1, "blue"]
   - [6, 1, "blue"]
-  - [7, 2, "blue"]
   - [8, 1, "blue"]
 assignment:
   assignable_nodes:
     source_0: [3]
-    source_1: [6, 8]
-    source_2: [7]
+    source_1: [6, 8, 9]
+    source_2: []
   matching: 
     - [0, 3]
     - [1, 6]
     - [1, 8]
-    - [2, 7]
+    - [1, 9]
 
 ---
 event_id: 21
 label: Contract
 metadata:
   vertices: 6
-  edges: 3
-  k: 3
+  edges: 4
+  k: 2
 ni:
   source_0: 2
-  source_1: 2
-  source_2: 2
+  source_1: 4
 edges:
+  - [8, 1, "blue"]
+  - [9, 1, "blue"]
   - [3, 0, "blue"]
   - [6, 1, "blue"]
-  - [7, 2, "blue"]
 assignment:
   assignable_nodes:
     source_0: [3]
-    source_1: [6]
-    source_2: [7]
+    source_1: [6, 8, 9]
   matching: 
     - [0, 3]
     - [1, 6]
-    - [2, 7]
+    - [1, 8]
+    - [1, 9]
 
 ---
 event_id: 22
 label: Contract
 metadata:
   vertices: 5
-  edges: 2
-  k: 3
+  edges: 3
+  k: 2
 ni:
-  source_0: 1
-  source_1: 2
-  source_2: 2
+  source_0: 2
+  source_1: 3
 edges:
-  - [6, 1, "blue"]
-  - [7, 2, "blue"]
+  - [8, 1, "blue"]
+  - [3, 0, "blue"]
+  - [9, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_0: []
-    source_1: [6]
-    source_2: [7]
+    source_0: [3]
+    source_1: [8, 9]
   matching: 
-    - [1, 6]
-    - [2, 7]
+    - [0, 3]
+    - [1, 8]
+    - [1, 9]
 
 ---
 event_id: 23
@@ -877,37 +877,37 @@ metadata:
   edges: 2
   k: 2
 ni:
-  source_1: 2
-  source_2: 2
+  source_0: 1
+  source_1: 3
 edges:
-  - [7, 2, "blue"]
-  - [6, 1, "blue"]
+  - [8, 1, "blue"]
+  - [9, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_1: [6]
-    source_2: [7]
+    source_0: []
+    source_1: [8, 9]
   matching: 
-    - [1, 6]
-    - [2, 7]
+    - [1, 8]
+    - [1, 9]
 
 ---
 event_id: 24
 label: Contract
 metadata:
   vertices: 3
-  edges: 1
-  k: 2
+  edges: 2
+  k: 1
 ni:
-  source_1: 2
-  source_2: 1
+  source_1: 3
 edges:
-  - [6, 1, "blue"]
+  - [9, 1, "blue"]
+  - [8, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_1: [6]
-    source_2: []
+    source_1: [8, 9]
   matching: 
-    - [1, 6]
+    - [1, 8]
+    - [1, 9]
 
 ---
 event_id: 25
@@ -919,12 +919,12 @@ metadata:
 ni:
   source_1: 2
 edges:
-  - [6, 1, "blue"]
+  - [9, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_1: [6]
+    source_1: [9]
   matching: 
-    - [1, 6]
+    - [1, 9]
 
 ---
 event_id: 26

@@ -805,11 +805,11 @@ edges:
   - [6, 0, "blue"]
   - [4, 2, "blue"]
   - [9, 1, "blue"]
-  - [8, 6, "red"]
+  - [8, 1, "red"]
 assignment:
   assignable_nodes:
     source_0: [6]
-    source_1: [9]
+    source_1: [8, 9]
     source_2: [4]
     source_3: [8]
   matching: 

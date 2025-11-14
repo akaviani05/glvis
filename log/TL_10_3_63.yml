@@ -600,14 +600,14 @@ edges:
   - [6, 2, "blue"]
   - [5, 0, "blue"]
   - [8, 1]
+  - [7, 2, "red"]
+  - [7, 1]
   - [8, 2, "red"]
-  - [7, 1, "blue"]
-  - [8, 5, "red"]
 assignment:
   assignable_nodes:
-    source_0: [5, 8]
+    source_0: [5]
     source_1: [7, 8]
-    source_2: [6, 8]
+    source_2: [6, 7, 8]
   matching: 
     - [0, 5]
     - [1, 7]
@@ -629,13 +629,13 @@ edges:
   - [6, 2, "blue"]
   - [5, 0, "blue"]
   - [8, 1]
-  - [8, 5, "red"]
+  - [8, 2, "red"]
   - [7, 1, "blue"]
 assignment:
   assignable_nodes:
     source_0: [5]
     source_1: [7, 8]
-    source_2: [6]
+    source_2: [6, 8]
   matching: 
     - [0, 5]
     - [1, 7]

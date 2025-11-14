@@ -966,15 +966,15 @@ ni:
   source_3: 2
 edges:
   - [7, 1, "blue"]
-  - [8, 4, "red"]
+  - [9, 0, "red"]
   - [8, 0, "red"]
   - [10, 0, "blue"]
-  - [9, 2, "blue"]
+  - [9, 2]
   - [8, 2]
   - [4, 3, "blue"]
 assignment:
   assignable_nodes:
-    source_0: [8, 10]
+    source_0: [8, 9, 10]
     source_1: [7]
     source_2: [8, 9]
     source_3: [4]

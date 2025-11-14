@@ -1260,13 +1260,13 @@ ni:
   source_3: 2
 edges:
   - [10, 1]
-  - [5, 3, "blue"]
+  - [10, 2, "red"]
   - [9, 2, "blue"]
-  - [10, 5, "red"]
+  - [5, 3, "blue"]
 assignment:
   assignable_nodes:
     source_1: [10]
-    source_2: [9]
+    source_2: [9, 10]
     source_3: [5]
   matching: 
     - [1, 10]

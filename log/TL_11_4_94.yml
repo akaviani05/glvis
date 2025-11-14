@@ -969,12 +969,12 @@ edges:
   - [5, 1, "blue"]
   - [9, 0, "blue"]
   - [10, 3]
-  - [8, 3, "blue"]
-  - [10, 7, "red"]
+  - [8, 0, "red"]
+  - [8, 3]
   - [10, 0, "red"]
 assignment:
   assignable_nodes:
-    source_0: [9, 10]
+    source_0: [8, 9, 10]
     source_1: [5]
     source_2: [7]
     source_3: [8, 10]
@@ -1002,8 +1002,8 @@ edges:
   - [5, 1, "blue"]
   - [9, 0, "blue"]
   - [10, 3]
-  - [8, 3, "blue"]
   - [10, 0, "red"]
+  - [8, 3, "blue"]
 assignment:
   assignable_nodes:
     source_0: [9, 10]

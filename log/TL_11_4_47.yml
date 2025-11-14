@@ -900,14 +900,14 @@ edges:
   - [9, 0, "blue"]
   - [8, 5]
   - [8, 4]
-  - [5, 1, "blue"]
+  - [10, 0, "red"]
   - [8, 0]
   - [10, 2]
   - [4, 3, "blue"]
-  - [10, 4, "red"]
+  - [5, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_0: [8, 9]
+    source_0: [8, 9, 10]
     source_1: [5, 8]
     source_2: [8, 10]
     source_3: [4, 8]
