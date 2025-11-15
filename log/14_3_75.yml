@@ -3,37 +3,729 @@ event_id: 0
 label: Initial
 metadata:
   vertices: 14
-  edges: 19
+  edges: 33
   k: 3
 ni:
   source_0: 2
   source_1: 9
   source_2: 3
 edges:
-  - [12, 1, "blue"]
-  - [10, 1, "blue"]
-  - [5, 6]
-  - [3, 12]
-  - [8, 2, "blue"]
-  - [7, 8]
-  - [9, 11]
-  - [4, 1, "blue"]
+  - [12, 7, "red"]
+  - [4, 13, "red"]
+  - [11, 10, "red"]
+  - [12, 1]
+  - [8, 2]
+  - [12, 13, "red"]
+  - [10, 11, "red"]
+  - [4, 1]
   - [7, 11]
-  - [9, 6]
-  - [7, 6]
-  - [6, 1, "blue"]
+  - [8, 3, "red"]
+  - [13, 3, "red"]
+  - [6, 1, "red"]
   - [5, 7]
-  - [13, 2, "blue"]
-  - [3, 10]
-  - [11, 0, "blue"]
-  - [5, 10]
-  - [3, 7]
+  - [10, 4, "red"]
+  - [6, 9, "red"]
+  - [13, 0, "red"]
+  - [4, 10, "red"]
+  - [3, 7, "red"]
+  - [6, 0, "red"]
   - [9, 8]
+  - [11, 5, "red"]
+  - [5, 10]
+  - [11, 0]
+  - [13, 2]
+  - [7, 6]
+  - [9, 11]
+  - [7, 8]
+  - [8, 4, "red"]
+  - [9, 10]
+  - [5, 6]
+  - [10, 1]
+  - [3, 13, "red"]
+  - [3, 0]
 assignment:
   assignable_nodes:
-    source_0: [7, 9, 11]
+    source_0: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    source_1: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    source_2: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+  matching: 
+    - [0, 3]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 8]
+    - [1, 9]
+    - [1, 10]
+    - [1, 11]
+    - [2, 12]
+    - [2, 13]
+
+---
+event_id: 1
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 32
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1]
+  - [10, 11, "red"]
+  - [7, 11]
+  - [11, 5, "red"]
+  - [10, 1]
+  - [12, 13, "red"]
+  - [9, 8]
+  - [10, 4, "red"]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7, "red"]
+  - [13, 2]
+  - [5, 7]
+  - [4, 10, "red"]
+  - [3, 13, "red"]
+  - [12, 7, "red"]
+  - [4, 1]
+  - [6, 1, "red"]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+  - [9, 11]
+  - [7, 8]
+  - [7, 6]
+  - [8, 2]
+  - [13, 0, "red"]
+  - [8, 3, "red"]
+  - [3, 0]
+  - [4, 13, "red"]
+  - [6, 9, "red"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 4, 5, 6, 7, 9, 10, 11, 12, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 11, 12, 13]
+    source_2: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+  matching: 
+    - [0, 3]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 11]
+    - [1, 12]
+    - [2, 8]
+    - [2, 13]
+
+---
+event_id: 2
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 31
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1]
+  - [6, 9, "red"]
+  - [7, 11]
+  - [11, 5, "red"]
+  - [10, 1]
+  - [12, 13, "red"]
+  - [9, 8]
+  - [10, 4, "red"]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7, "red"]
+  - [13, 2]
+  - [5, 7]
+  - [4, 10, "red"]
+  - [3, 13, "red"]
+  - [12, 7, "red"]
+  - [4, 1]
+  - [6, 1, "red"]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+  - [9, 11]
+  - [7, 8]
+  - [7, 6]
+  - [8, 2]
+  - [13, 0, "red"]
+  - [8, 3, "red"]
+  - [3, 0]
+  - [4, 13, "red"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 12, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 11, 12, 13]
+    source_2: [3, 5, 6, 7, 8, 9, 11, 12, 13]
+  matching: 
+    - [0, 3]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 11]
+    - [1, 12]
+    - [2, 8]
+    - [2, 13]
+
+---
+event_id: 3
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 30
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1]
+  - [4, 13, "red"]
+  - [7, 11]
+  - [11, 5, "red"]
+  - [10, 1]
+  - [12, 13, "red"]
+  - [9, 8]
+  - [10, 4, "red"]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7, "red"]
+  - [13, 2]
+  - [5, 7]
+  - [4, 10, "red"]
+  - [3, 13, "red"]
+  - [12, 7, "red"]
+  - [4, 1]
+  - [6, 1, "red"]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+  - [9, 11]
+  - [7, 8]
+  - [7, 6]
+  - [8, 2]
+  - [13, 0, "red"]
+  - [8, 3, "red"]
+  - [3, 0]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 12, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 11, 12, 13]
+    source_2: [3, 5, 7, 8, 9, 11, 12, 13]
+  matching: 
+    - [0, 3]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 11]
+    - [1, 12]
+    - [2, 8]
+    - [2, 13]
+
+---
+event_id: 4
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 29
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1]
+  - [3, 0]
+  - [7, 11]
+  - [11, 5, "red"]
+  - [10, 1]
+  - [12, 13, "red"]
+  - [9, 8]
+  - [10, 4, "red"]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7, "red"]
+  - [13, 2]
+  - [5, 7]
+  - [4, 10, "red"]
+  - [3, 13, "red"]
+  - [12, 7, "red"]
+  - [4, 1]
+  - [6, 1, "red"]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+  - [9, 11]
+  - [7, 8]
+  - [7, 6]
+  - [8, 2]
+  - [13, 0, "red"]
+  - [8, 3, "red"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 12, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 11, 12, 13]
+    source_2: [3, 5, 7, 8, 9, 11, 12, 13]
+  matching: 
+    - [0, 3]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 11]
+    - [1, 12]
+    - [2, 8]
+    - [2, 13]
+
+---
+event_id: 5
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 28
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1]
+  - [3, 0]
+  - [7, 11]
+  - [8, 3, "red"]
+  - [10, 1]
+  - [12, 13, "red"]
+  - [9, 8]
+  - [10, 4, "red"]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7]
+  - [13, 2]
+  - [5, 7]
+  - [4, 10, "red"]
+  - [3, 13]
+  - [12, 7, "red"]
+  - [4, 1]
+  - [6, 1]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+  - [9, 11]
+  - [7, 8]
+  - [7, 6]
+  - [8, 2]
+  - [13, 0, "red"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 12, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 12, 13]
+    source_2: [3, 5, 7, 8, 9, 12, 13]
+  matching: 
+    - [0, 11]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 12]
+    - [1, 13]
+    - [2, 3]
+    - [2, 8]
+
+---
+event_id: 6
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 27
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1]
+  - [3, 0]
+  - [7, 11]
+  - [13, 0, "red"]
+  - [10, 1]
+  - [12, 13, "red"]
+  - [9, 8]
+  - [10, 4, "red"]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7]
+  - [13, 2]
+  - [5, 7]
+  - [4, 10, "red"]
+  - [3, 13]
+  - [12, 7, "red"]
+  - [4, 1]
+  - [6, 1]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+  - [9, 11]
+  - [7, 8]
+  - [7, 6]
+  - [8, 2, "blue"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 12, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 12, 13]
+    source_2: [3, 5, 7, 8, 9, 12, 13]
+  matching: 
+    - [0, 11]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 12]
+    - [1, 13]
+    - [2, 3]
+    - [2, 8]
+
+---
+event_id: 7
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 26
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1]
+  - [3, 0]
+  - [7, 11]
+  - [13, 0, "red"]
+  - [10, 1]
+  - [8, 2, "blue"]
+  - [9, 8]
+  - [10, 4, "red"]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7]
+  - [13, 2]
+  - [5, 7]
+  - [4, 10, "red"]
+  - [3, 13]
+  - [12, 7, "red"]
+  - [4, 1]
+  - [6, 1]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+  - [9, 11]
+  - [7, 8]
+  - [7, 6]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 12, 13]
+    source_2: [3, 5, 7, 8, 9, 13]
+  matching: 
+    - [0, 11]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 12]
+    - [1, 13]
+    - [2, 3]
+    - [2, 8]
+
+---
+event_id: 8
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 25
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1]
+  - [3, 0]
+  - [7, 11]
+  - [13, 0, "red"]
+  - [10, 1, "blue"]
+  - [8, 2, "blue"]
+  - [9, 8]
+  - [7, 6]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7]
+  - [13, 2]
+  - [5, 7]
+  - [4, 10, "red"]
+  - [3, 13]
+  - [12, 7, "red"]
+  - [4, 1]
+  - [6, 1]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+  - [9, 11]
+  - [7, 8]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 12, 13]
+    source_2: [3, 5, 7, 8, 9, 13]
+  matching: 
+    - [0, 11]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 12]
+    - [1, 13]
+    - [2, 3]
+    - [2, 8]
+
+---
+event_id: 9
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 24
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1]
+  - [3, 0]
+  - [7, 11]
+  - [13, 0, "red"]
+  - [10, 1, "blue"]
+  - [8, 2, "blue"]
+  - [9, 8]
+  - [7, 6]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7]
+  - [13, 2]
+  - [5, 7]
+  - [7, 8]
+  - [3, 13]
+  - [12, 7, "red"]
+  - [4, 1, "blue"]
+  - [6, 1]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+  - [9, 11]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 12, 13]
+    source_2: [3, 5, 7, 8, 9, 13]
+  matching: 
+    - [0, 11]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 12]
+    - [1, 13]
+    - [2, 3]
+    - [2, 8]
+
+---
+event_id: 10
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 23
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0]
+  - [12, 1, "blue"]
+  - [3, 0]
+  - [7, 11]
+  - [13, 0, "red"]
+  - [10, 1, "blue"]
+  - [8, 2, "blue"]
+  - [9, 8]
+  - [7, 6]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7]
+  - [13, 2]
+  - [5, 7]
+  - [7, 8]
+  - [3, 13]
+  - [9, 11]
+  - [4, 1, "blue"]
+  - [6, 1]
+  - [11, 10, "red"]
+  - [6, 0, "red"]
+  - [13, 3, "red"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 12, 13]
+    source_2: [3, 5, 7, 8, 9, 13]
+  matching: 
+    - [0, 11]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 12]
+    - [1, 13]
+    - [2, 3]
+    - [2, 8]
+
+---
+event_id: 11
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 22
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0, "blue"]
+  - [12, 1, "blue"]
+  - [3, 0]
+  - [7, 11]
+  - [13, 0, "red"]
+  - [10, 1, "blue"]
+  - [8, 2, "blue"]
+  - [9, 8]
+  - [7, 6]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7]
+  - [13, 2]
+  - [5, 7]
+  - [7, 8]
+  - [3, 13]
+  - [9, 11]
+  - [4, 1, "blue"]
+  - [6, 1]
+  - [13, 3, "red"]
+  - [6, 0, "red"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 13]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 12, 13]
+    source_2: [3, 5, 7, 8, 9, 13]
+  matching: 
+    - [0, 11]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 12]
+    - [1, 13]
+    - [2, 3]
+    - [2, 8]
+
+---
+event_id: 12
+label: Make_critical
+metadata:
+  vertices: 14
+  edges: 21
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 3
+edges:
+  - [9, 10]
+  - [11, 0, "blue"]
+  - [12, 1, "blue"]
+  - [3, 0]
+  - [7, 11]
+  - [13, 0, "red"]
+  - [10, 1, "blue"]
+  - [8, 2, "blue"]
+  - [9, 8]
+  - [7, 6]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7]
+  - [13, 2]
+  - [5, 7]
+  - [7, 8]
+  - [3, 13]
+  - [9, 11]
+  - [4, 1, "blue"]
+  - [6, 1]
+  - [6, 0, "red"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 5, 6, 7, 9, 11, 13]
     source_1: [3, 4, 5, 6, 7, 9, 10, 12]
-    source_2: [7, 8, 9, 13]
+    source_2: [3, 5, 7, 8, 9, 13]
   matching: 
     - [0, 11]
     - [1, 3]
@@ -48,41 +740,44 @@ assignment:
     - [2, 13]
 
 ---
-event_id: 1
-label: Contract
+event_id: 13
+label: Make_critical
 metadata:
-  vertices: 13
-  edges: 18
+  vertices: 14
+  edges: 20
   k: 3
 ni:
-  source_0: 1
+  source_0: 2
   source_1: 9
   source_2: 3
 edges:
+  - [9, 10]
+  - [11, 0, "blue"]
+  - [12, 1, "blue"]
+  - [3, 0]
+  - [7, 11]
+  - [6, 0, "red"]
+  - [10, 1, "blue"]
+  - [8, 2, "blue"]
+  - [9, 8]
   - [7, 6]
+  - [5, 10]
   - [5, 6]
-  - [7, 0]
-  - [3, 12]
-  - [9, 8]
-  - [3, 10]
+  - [3, 7]
   - [13, 2, "blue"]
-  - [4, 1, "blue"]
-  - [9, 6]
-  - [8, 2, "blue"]
   - [5, 7]
-  - [5, 10]
-  - [10, 1, "blue"]
-  - [9, 0]
   - [7, 8]
-  - [6, 1, "blue"]
-  - [12, 1, "blue"]
-  - [3, 7]
+  - [3, 13]
+  - [9, 11]
+  - [4, 1, "blue"]
+  - [6, 1]
 assignment:
   assignable_nodes:
-    source_0: [7, 9]
+    source_0: [3, 5, 6, 7, 9, 11]
     source_1: [3, 4, 5, 6, 7, 9, 10, 12]
-    source_2: [7, 8, 9, 13]
+    source_2: [3, 5, 7, 8, 9, 13]
   matching: 
+    - [0, 11]
     - [1, 3]
     - [1, 4]
     - [1, 5]
@@ -91,466 +786,565 @@ assignment:
     - [1, 9]
     - [1, 10]
     - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 2
-label: Contract
-metadata:
-  vertices: 12
-  edges: 16
-  k: 2
-ni:
-  source_1: 9
-  source_2: 3
-edges:
-  - [3, 10, "red"]
-  - [3, 12, "red"]
-  - [8, 2, "blue"]
-  - [5, 7, "red"]
-  - [9, 8]
-  - [3, 7, "red"]
-  - [5, 6, "red"]
-  - [7, 6]
-  - [9, 6]
-  - [4, 1, "blue"]
-  - [6, 1, "blue"]
-  - [13, 2, "blue"]
-  - [7, 8]
-  - [12, 1, "blue"]
-  - [10, 1, "blue"]
-  - [5, 10, "red"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 5, 6, 7, 9, 10, 12]
-    source_2: [3, 5, 7, 8, 9, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 5]
-    - [1, 6]
-    - [1, 7]
-    - [1, 9]
-    - [1, 10]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 3
-label: Make_critical
-metadata:
-  vertices: 12
-  edges: 15
-  k: 2
-ni:
-  source_1: 9
-  source_2: 3
-edges:
-  - [8, 2, "blue"]
-  - [4, 1, "blue"]
-  - [9, 8]
-  - [13, 2, "blue"]
-  - [3, 7]
-  - [5, 6, "red"]
-  - [7, 6]
-  - [5, 7, "red"]
-  - [10, 1, "blue"]
-  - [12, 1, "blue"]
-  - [3, 10]
-  - [7, 8]
-  - [9, 6]
-  - [6, 1, "blue"]
-  - [5, 10, "red"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 5, 6, 7, 9, 10, 12]
-    source_2: [3, 5, 7, 8, 9, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 5]
-    - [1, 6]
-    - [1, 7]
-    - [1, 9]
-    - [1, 10]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 4
-label: Make_critical
-metadata:
-  vertices: 12
-  edges: 14
-  k: 2
-ni:
-  source_1: 9
-  source_2: 3
-edges:
-  - [8, 2, "blue"]
-  - [4, 1, "blue"]
-  - [9, 8]
-  - [13, 2, "blue"]
-  - [3, 7]
-  - [5, 10]
-  - [7, 6]
-  - [5, 7]
-  - [10, 1, "blue"]
-  - [12, 1, "blue"]
-  - [3, 10]
-  - [7, 8]
-  - [9, 6]
-  - [6, 1, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 5, 6, 7, 9, 10, 12]
-    source_2: [3, 5, 7, 8, 9, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 5]
-    - [1, 6]
-    - [1, 7]
-    - [1, 9]
-    - [1, 10]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 5
-label: Contract
-metadata:
-  vertices: 11
-  edges: 13
-  k: 2
-ni:
-  source_1: 8
-  source_2: 3
-edges:
-  - [9, 8]
-  - [7, 8]
-  - [3, 7, "red"]
-  - [3, 1]
-  - [4, 1, "blue"]
-  - [8, 2, "blue"]
-  - [13, 2, "blue"]
-  - [5, 1]
-  - [9, 6]
-  - [6, 1, "blue"]
-  - [7, 6]
-  - [5, 7, "red"]
-  - [12, 1, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 5, 6, 7, 9, 12]
-    source_2: [3, 5, 7, 8, 9, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 5]
-    - [1, 6]
-    - [1, 7]
-    - [1, 9]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 6
-label: Make_critical
-metadata:
-  vertices: 11
-  edges: 12
-  k: 2
-ni:
-  source_1: 8
-  source_2: 3
-edges:
-  - [6, 1, "blue"]
-  - [7, 8]
-  - [5, 1]
-  - [9, 6]
-  - [3, 1, "blue"]
-  - [9, 8]
-  - [7, 6]
-  - [4, 1, "blue"]
-  - [12, 1, "blue"]
-  - [5, 7, "red"]
-  - [13, 2, "blue"]
-  - [8, 2, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 5, 6, 7, 9, 12]
-    source_2: [5, 7, 8, 9, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 5]
-    - [1, 6]
-    - [1, 7]
-    - [1, 9]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 7
-label: Make_critical
-metadata:
-  vertices: 11
-  edges: 11
-  k: 2
-ni:
-  source_1: 8
-  source_2: 3
-edges:
-  - [6, 1, "blue"]
-  - [7, 8]
-  - [5, 1, "blue"]
-  - [9, 6]
-  - [3, 1, "blue"]
-  - [9, 8]
-  - [7, 6]
-  - [4, 1, "blue"]
-  - [12, 1, "blue"]
-  - [8, 2, "blue"]
-  - [13, 2, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 5, 6, 7, 9, 12]
-    source_2: [7, 8, 9, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 5]
-    - [1, 6]
-    - [1, 7]
-    - [1, 9]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 8
-label: Contract
-metadata:
-  vertices: 10
-  edges: 10
-  k: 2
-ni:
-  source_1: 7
-  source_2: 3
-edges:
-  - [7, 8, "red"]
-  - [3, 1, "blue"]
-  - [5, 1, "blue"]
-  - [8, 2, "blue"]
-  - [7, 1]
-  - [13, 2, "blue"]
-  - [9, 1]
-  - [9, 8, "red"]
-  - [12, 1, "blue"]
-  - [4, 1, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 5, 7, 9, 12]
-    source_2: [7, 8, 9, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 5]
-    - [1, 7]
-    - [1, 9]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 9
-label: Make_critical
-metadata:
-  vertices: 10
-  edges: 9
-  k: 2
-ni:
-  source_1: 7
-  source_2: 3
-edges:
-  - [4, 1, "blue"]
-  - [9, 1]
-  - [13, 2, "blue"]
-  - [7, 1, "blue"]
-  - [3, 1, "blue"]
-  - [12, 1, "blue"]
-  - [9, 8, "red"]
-  - [5, 1, "blue"]
-  - [8, 2, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 5, 7, 9, 12]
-    source_2: [8, 9, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 5]
-    - [1, 7]
-    - [1, 9]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 10
-label: Make_critical
-metadata:
-  vertices: 10
-  edges: 8
-  k: 2
-ni:
-  source_1: 7
-  source_2: 3
-edges:
-  - [4, 1, "blue"]
-  - [9, 1, "blue"]
-  - [13, 2, "blue"]
-  - [7, 1, "blue"]
-  - [3, 1, "blue"]
-  - [12, 1, "blue"]
-  - [8, 2, "blue"]
-  - [5, 1, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 5, 7, 9, 12]
-    source_2: [8, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 5]
-    - [1, 7]
-    - [1, 9]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 11
-label: Contract
-metadata:
-  vertices: 9
-  edges: 7
-  k: 2
-ni:
-  source_1: 6
-  source_2: 3
-edges:
-  - [3, 1, "blue"]
-  - [7, 1, "blue"]
-  - [9, 1, "blue"]
-  - [8, 2, "blue"]
-  - [13, 2, "blue"]
-  - [12, 1, "blue"]
-  - [4, 1, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 7, 9, 12]
-    source_2: [8, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 7]
-    - [1, 9]
-    - [1, 12]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 12
-label: Contract
-metadata:
-  vertices: 8
-  edges: 6
-  k: 2
-ni:
-  source_1: 5
-  source_2: 3
-edges:
-  - [3, 1, "blue"]
-  - [4, 1, "blue"]
-  - [9, 1, "blue"]
-  - [7, 1, "blue"]
-  - [13, 2, "blue"]
-  - [8, 2, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [3, 4, 7, 9]
-    source_2: [8, 13]
-  matching: 
-    - [1, 3]
-    - [1, 4]
-    - [1, 7]
-    - [1, 9]
-    - [2, 8]
-    - [2, 13]
-
----
-event_id: 13
-label: Contract
-metadata:
-  vertices: 7
-  edges: 5
-  k: 2
-ni:
-  source_1: 4
-  source_2: 3
-edges:
-  - [8, 2, "blue"]
-  - [13, 2, "blue"]
-  - [7, 1, "blue"]
-  - [4, 1, "blue"]
-  - [9, 1, "blue"]
-assignment:
-  assignable_nodes:
-    source_1: [4, 7, 9]
-    source_2: [8, 13]
-  matching: 
-    - [1, 4]
-    - [1, 7]
-    - [1, 9]
     - [2, 8]
     - [2, 13]
 
 ---
 event_id: 14
-label: Contract
+label: Make_critical
 metadata:
-  vertices: 6
-  edges: 4
-  k: 2
+  vertices: 14
+  edges: 19
+  k: 3
 ni:
-  source_1: 3
+  source_0: 2
+  source_1: 9
   source_2: 3
 edges:
-  - [13, 2, "blue"]
-  - [7, 1, "blue"]
+  - [9, 10]
+  - [11, 0, "blue"]
+  - [12, 1, "blue"]
+  - [3, 0]
+  - [7, 11]
+  - [6, 1, "blue"]
+  - [10, 1, "blue"]
   - [8, 2, "blue"]
-  - [9, 1, "blue"]
+  - [9, 8]
+  - [7, 6]
+  - [5, 10]
+  - [5, 6]
+  - [3, 7]
+  - [13, 2, "blue"]
+  - [5, 7]
+  - [7, 8]
+  - [3, 13]
+  - [9, 11]
+  - [4, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_1: [7, 9]
-    source_2: [8, 13]
+    source_0: [3, 7, 9, 11]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 12]
+    source_2: [3, 7, 8, 9, 13]
   matching: 
+    - [0, 11]
+    - [1, 3]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
     - [1, 7]
     - [1, 9]
+    - [1, 10]
+    - [1, 12]
     - [2, 8]
     - [2, 13]
 
 ---
 event_id: 15
 label: Contract
+metadata:
+  vertices: 13
+  edges: 18
+  k: 3
+ni:
+  source_0: 2
+  source_1: 9
+  source_2: 2
+edges:
+  - [3, 0]
+  - [9, 11]
+  - [7, 8]
+  - [5, 7]
+  - [5, 6]
+  - [9, 10]
+  - [9, 8]
+  - [3, 7]
+  - [7, 6]
+  - [3, 2]
+  - [5, 10]
+  - [10, 1, "blue"]
+  - [11, 0, "blue"]
+  - [7, 11]
+  - [12, 1, "blue"]
+  - [8, 2, "blue"]
+  - [4, 1, "blue"]
+  - [6, 1, "blue"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 7, 9, 11]
+    source_1: [3, 4, 5, 6, 7, 9, 10, 12]
+    source_2: [3, 7, 8, 9]
+  matching: 
+    - [0, 11]
+    - [1, 3]
+    - [1, 4]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 16
+label: Contract
+metadata:
+  vertices: 12
+  edges: 17
+  k: 3
+ni:
+  source_0: 2
+  source_1: 8
+  source_2: 2
+edges:
+  - [7, 6]
+  - [7, 8]
+  - [7, 11]
+  - [10, 1, "blue"]
+  - [12, 1, "blue"]
+  - [3, 2]
+  - [11, 0, "blue"]
+  - [3, 7]
+  - [5, 10]
+  - [9, 11]
+  - [5, 7]
+  - [6, 1, "blue"]
+  - [8, 2, "blue"]
+  - [9, 10]
+  - [5, 6]
+  - [9, 8]
+  - [3, 0]
+assignment:
+  assignable_nodes:
+    source_0: [3, 7, 9, 11]
+    source_1: [3, 5, 6, 7, 9, 10, 12]
+    source_2: [3, 7, 8, 9]
+  matching: 
+    - [0, 11]
+    - [1, 3]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 10]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 17
+label: Contract
+metadata:
+  vertices: 11
+  edges: 16
+  k: 3
+ni:
+  source_0: 2
+  source_1: 7
+  source_2: 2
+edges:
+  - [9, 8, "red"]
+  - [9, 1]
+  - [8, 2, "blue"]
+  - [3, 2]
+  - [5, 7, "red"]
+  - [3, 0]
+  - [5, 1]
+  - [7, 6]
+  - [3, 7]
+  - [9, 11, "red"]
+  - [11, 0, "blue"]
+  - [6, 1, "blue"]
+  - [12, 1, "blue"]
+  - [5, 6, "red"]
+  - [7, 11]
+  - [7, 8]
+assignment:
+  assignable_nodes:
+    source_0: [3, 7, 9, 11]
+    source_1: [3, 5, 6, 7, 9, 12]
+    source_2: [3, 7, 8, 9]
+  matching: 
+    - [0, 11]
+    - [1, 3]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 18
+label: Make_critical
+metadata:
+  vertices: 11
+  edges: 15
+  k: 3
+ni:
+  source_0: 2
+  source_1: 7
+  source_2: 2
+edges:
+  - [7, 6]
+  - [5, 1]
+  - [3, 7]
+  - [7, 8]
+  - [12, 1, "blue"]
+  - [5, 6, "red"]
+  - [9, 1]
+  - [5, 7, "red"]
+  - [8, 2, "blue"]
+  - [9, 8, "red"]
+  - [3, 2]
+  - [6, 1, "blue"]
+  - [7, 11]
+  - [3, 0]
+  - [11, 0, "blue"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 7, 11]
+    source_1: [3, 5, 6, 7, 9, 12]
+    source_2: [3, 7, 8]
+  matching: 
+    - [0, 11]
+    - [1, 3]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 19
+label: Make_critical
+metadata:
+  vertices: 11
+  edges: 14
+  k: 3
+ni:
+  source_0: 2
+  source_1: 7
+  source_2: 2
+edges:
+  - [7, 6]
+  - [5, 1]
+  - [3, 7]
+  - [7, 8]
+  - [12, 1, "blue"]
+  - [11, 0, "blue"]
+  - [9, 1]
+  - [5, 7, "red"]
+  - [8, 2, "blue"]
+  - [9, 8, "red"]
+  - [3, 2]
+  - [6, 1, "blue"]
+  - [7, 11]
+  - [3, 0]
+assignment:
+  assignable_nodes:
+    source_0: [3, 7, 11]
+    source_1: [3, 5, 6, 7, 9, 12]
+    source_2: [3, 7, 8]
+  matching: 
+    - [0, 11]
+    - [1, 3]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 20
+label: Make_critical
+metadata:
+  vertices: 11
+  edges: 13
+  k: 3
+ni:
+  source_0: 2
+  source_1: 7
+  source_2: 2
+edges:
+  - [7, 6]
+  - [5, 1, "blue"]
+  - [3, 7]
+  - [7, 8]
+  - [12, 1, "blue"]
+  - [11, 0, "blue"]
+  - [9, 1]
+  - [3, 0]
+  - [8, 2, "blue"]
+  - [9, 8, "red"]
+  - [3, 2]
+  - [6, 1, "blue"]
+  - [7, 11]
+assignment:
+  assignable_nodes:
+    source_0: [3, 7, 11]
+    source_1: [3, 5, 6, 7, 9, 12]
+    source_2: [3, 7, 8]
+  matching: 
+    - [0, 11]
+    - [1, 3]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 21
+label: Make_critical
+metadata:
+  vertices: 11
+  edges: 12
+  k: 3
+ni:
+  source_0: 2
+  source_1: 7
+  source_2: 2
+edges:
+  - [7, 6]
+  - [5, 1, "blue"]
+  - [3, 7]
+  - [7, 8]
+  - [12, 1, "blue"]
+  - [11, 0, "blue"]
+  - [9, 1, "blue"]
+  - [3, 0]
+  - [8, 2, "blue"]
+  - [7, 11]
+  - [3, 2]
+  - [6, 1, "blue"]
+assignment:
+  assignable_nodes:
+    source_0: [3, 7, 11]
+    source_1: [3, 5, 6, 7, 9, 12]
+    source_2: [3, 7, 8]
+  matching: 
+    - [0, 11]
+    - [1, 3]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 22
+label: Contract
+metadata:
+  vertices: 10
+  edges: 11
+  k: 3
+ni:
+  source_0: 1
+  source_1: 7
+  source_2: 2
+edges:
+  - [8, 2, "blue"]
+  - [7, 0]
+  - [6, 1, "blue"]
+  - [3, 2]
+  - [3, 7]
+  - [3, 0]
+  - [7, 8]
+  - [9, 1, "blue"]
+  - [5, 1, "blue"]
+  - [12, 1, "blue"]
+  - [7, 6]
+assignment:
+  assignable_nodes:
+    source_0: [3, 7]
+    source_1: [3, 5, 6, 7, 9, 12]
+    source_2: [3, 7, 8]
+  matching: 
+    - [1, 3]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 23
+label: Contract
+metadata:
+  vertices: 9
+  edges: 9
+  k: 2
+ni:
+  source_1: 7
+  source_2: 2
+edges:
+  - [7, 6]
+  - [9, 1, "blue"]
+  - [6, 1, "blue"]
+  - [8, 2, "blue"]
+  - [5, 1, "blue"]
+  - [12, 1, "blue"]
+  - [7, 8]
+  - [3, 2]
+  - [3, 7]
+assignment:
+  assignable_nodes:
+    source_1: [3, 5, 6, 7, 9, 12]
+    source_2: [3, 7, 8]
+  matching: 
+    - [1, 3]
+    - [1, 5]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 24
+label: Contract
+metadata:
+  vertices: 8
+  edges: 8
+  k: 2
+ni:
+  source_1: 6
+  source_2: 2
+edges:
+  - [7, 6]
+  - [7, 8]
+  - [9, 1, "blue"]
+  - [12, 1, "blue"]
+  - [8, 2, "blue"]
+  - [3, 7]
+  - [3, 2]
+  - [6, 1, "blue"]
+assignment:
+  assignable_nodes:
+    source_1: [3, 6, 7, 9, 12]
+    source_2: [3, 7, 8]
+  matching: 
+    - [1, 3]
+    - [1, 6]
+    - [1, 7]
+    - [1, 9]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 25
+label: Contract
+metadata:
+  vertices: 7
+  edges: 7
+  k: 2
+ni:
+  source_1: 5
+  source_2: 2
+edges:
+  - [7, 6]
+  - [7, 8]
+  - [12, 1, "blue"]
+  - [3, 2]
+  - [6, 1, "blue"]
+  - [3, 7]
+  - [8, 2, "blue"]
+assignment:
+  assignable_nodes:
+    source_1: [3, 6, 7, 12]
+    source_2: [3, 7, 8]
+  matching: 
+    - [1, 3]
+    - [1, 6]
+    - [1, 7]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 26
+label: Contract
+metadata:
+  vertices: 6
+  edges: 6
+  k: 2
+ni:
+  source_1: 4
+  source_2: 2
+edges:
+  - [8, 2, "blue"]
+  - [7, 8, "red"]
+  - [3, 7]
+  - [7, 1]
+  - [12, 1, "blue"]
+  - [3, 2]
+assignment:
+  assignable_nodes:
+    source_1: [3, 7, 12]
+    source_2: [3, 7, 8]
+  matching: 
+    - [1, 3]
+    - [1, 7]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 27
+label: Make_critical
+metadata:
+  vertices: 6
+  edges: 5
+  k: 2
+ni:
+  source_1: 4
+  source_2: 2
+edges:
+  - [3, 7]
+  - [8, 2, "blue"]
+  - [3, 2]
+  - [12, 1, "blue"]
+  - [7, 1, "blue"]
+assignment:
+  assignable_nodes:
+    source_1: [3, 7, 12]
+    source_2: [3, 8]
+  matching: 
+    - [1, 3]
+    - [1, 7]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 28
+label: Contract
+metadata:
+  vertices: 5
+  edges: 4
+  k: 2
+ni:
+  source_1: 3
+  source_2: 2
+edges:
+  - [3, 1]
+  - [12, 1, "blue"]
+  - [3, 2, "red"]
+  - [8, 2, "blue"]
+assignment:
+  assignable_nodes:
+    source_1: [3, 12]
+    source_2: [3, 8]
+  matching: 
+    - [1, 3]
+    - [1, 12]
+    - [2, 8]
+
+---
+event_id: 29
+label: Make_critical
 metadata:
   vertices: 5
   edges: 3
@@ -559,20 +1353,20 @@ ni:
   source_1: 3
   source_2: 2
 edges:
-  - [13, 2, "blue"]
-  - [9, 1, "blue"]
-  - [7, 1, "blue"]
+  - [12, 1, "blue"]
+  - [8, 2, "blue"]
+  - [3, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_1: [7, 9]
-    source_2: [13]
+    source_1: [3, 12]
+    source_2: [8]
   matching: 
-    - [1, 7]
-    - [1, 9]
-    - [2, 13]
+    - [1, 3]
+    - [1, 12]
+    - [2, 8]
 
 ---
-event_id: 16
+event_id: 30
 label: Contract
 metadata:
   vertices: 4
@@ -582,18 +1376,18 @@ ni:
   source_1: 2
   source_2: 2
 edges:
-  - [9, 1, "blue"]
-  - [13, 2, "blue"]
+  - [8, 2, "blue"]
+  - [3, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_1: [9]
-    source_2: [13]
+    source_1: [3]
+    source_2: [8]
   matching: 
-    - [1, 9]
-    - [2, 13]
+    - [1, 3]
+    - [2, 8]
 
 ---
-event_id: 17
+event_id: 31
 label: Contract
 metadata:
   vertices: 3
@@ -603,16 +1397,16 @@ ni:
   source_1: 2
   source_2: 1
 edges:
-  - [9, 1, "blue"]
+  - [3, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_1: [9]
+    source_1: [3]
     source_2: []
   matching: 
-    - [1, 9]
+    - [1, 3]
 
 ---
-event_id: 18
+event_id: 32
 label: Contract
 metadata:
   vertices: 2
@@ -621,15 +1415,15 @@ metadata:
 ni:
   source_1: 2
 edges:
-  - [9, 1, "blue"]
+  - [3, 1, "blue"]
 assignment:
   assignable_nodes:
-    source_1: [9]
+    source_1: [3]
   matching: 
-    - [1, 9]
+    - [1, 3]
 
 ---
-event_id: 19
+event_id: 33
 label: Contract
 metadata:
   vertices: 1
@@ -644,7 +1438,7 @@ assignment:
   matching: null
 
 ---
-event_id: 20
+event_id: 34
 label: Contract
 metadata:
   vertices: 0
@@ -657,7 +1451,7 @@ assignment:
   matching: null
 
 ---
-event_id: 21
+event_id: 35
 label: Final graph (all partitions contracted)
 metadata:
   vertices: 0
